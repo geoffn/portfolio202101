@@ -71,10 +71,10 @@ ul {
   list-style: none;
   padding: 5px;
 }
-.product-owner li:hover {
+/* .product-owner li:hover {
   transform: translate(10px, 10px);
   transition: all 0.25s linear;
-}
+} */
 .po:hover {
   /*  */
   transform: scale(20);

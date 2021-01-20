@@ -5,7 +5,7 @@ const subLinks = document.querySelectorAll('a.subLink')
 
 console.log(document.getElementById('sl-architecture'))
 
-console.log(resumePO)
+console.log(subLinks)
 setAllSectionsHidden()
 
 setSectionVisible("architecture")
@@ -34,7 +34,9 @@ function setEventListener (){
     subLinks.forEach(sublink => {
         let linkElement = document.getElementById(sublink.id)
         linkElement.addEventListener("click", (e) => {
+            if(linkElement.id !== 'sl-resume'){   
             e.preventDefault();
+        }
             setOnClick(linkElement.id.replace('sl-', ''))
         })
         console.log(linkElement.getEventListeners())
