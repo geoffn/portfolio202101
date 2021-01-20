@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+:root {
+  --main-bg-color: #d9dab0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -8,10 +12,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
+  background-color: var(--main-bg-color);
   justify-content: center;
   min-width: 600px;
 }
 
+ul {
+  list-style: none;
+}
+.product-owner li {
+  padding: 5px;
+}
 .container {
   /* background-color: lightcyan; */
   background: none;
@@ -24,14 +35,33 @@ body {
   border-radius: 20px;
   background: linear-gradient(
     to right bottom,
-    rgba(239, 88, 74, 0.7),
+    rgba(239, 88, 74, 0.9),
     rgba(255, 255, 255, 0.3)
   );
   position: absolute;
   top: 10vh;
   left: 350px;
   width: 650px;
+  padding-left: 5px;
+  color: #394c7f;
 }
+
+.product-owner.resume {
+  display: flex;
+  border-radius: 20px;
+  position: absolute;
+  background: white;
+  top: 10vh;
+  left: 350px;
+  width: 650px;
+  padding-left: 5px;
+  color: #394c7f;
+}
+
+.product-owner h1 {
+  color: #394c7f;
+}
+
 .po {
   /* text-decoration: none; */
   /* background-color: rgba(0, 0, 0, 0); */
@@ -81,14 +111,15 @@ body {
   overflow: hidden;
 }
 .item {
-  border-top: 1px solid #ef584a;
+  border-top: 1px solid var(--main-bg-color);
   overflow: hidden;
   list-style: none;
 }
 .btn {
   display: block;
   padding: 15px 20px;
-  background-color: #ff6f61;
+  /* background-color: #ff6f61; */
+  background-color: var(--main-bg-color);
   color: #fff;
   position: relative;
 }
@@ -99,7 +130,7 @@ body {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 10px solid #ff6f61;
+  border-top: 10px solidvar(--main-bg-color);
   right: 15px;
   bottom: -10px;
   z-index: 9;

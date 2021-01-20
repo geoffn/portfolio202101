@@ -1,16 +1,17 @@
 
 const allSections = document.querySelectorAll('section')
-
+const resumePO = document.querySelector('div.product-owner')
 const subLinks = document.querySelectorAll('a.subLink')
 
 console.log(document.getElementById('sl-architecture'))
 
-console.log(subLinks)
+console.log(resumePO)
 setAllSectionsHidden()
 
 setSectionVisible("architecture")
 
 setEventListener()
+
 
 
 //Set all Sections as Hidden
@@ -45,4 +46,5 @@ function setEventListener (){
 function setOnClick(sectionLink){
     setAllSectionsHidden()
     setSectionVisible(sectionLink)
+
 }    
