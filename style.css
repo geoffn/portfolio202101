@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   background-position: fixed;
   justify-content: center;
+  min-width: 600px;
 }
 
 .container {
@@ -23,12 +24,13 @@ body {
   border-radius: 20px;
   background: linear-gradient(
     to right bottom,
-    rgba(206, 34, 34, 0.7),
+    rgba(239, 88, 74, 0.7),
     rgba(255, 255, 255, 0.3)
   );
   position: absolute;
   top: 10vh;
-  left: 25%;
+  left: 350px;
+  width: 650px;
 }
 .po {
   /* text-decoration: none; */
@@ -68,9 +70,9 @@ body {
 
 .wrapper {
   position: absolute;
-  top: 22vh;
-  left: 10vw;
-  transform: translate(-50%, -50%);
+  top: 10vh;
+  left: 5%;
+  /* transform: translate(-50%, -50%); */
 }
 .mainMenu {
   width: 250px;
